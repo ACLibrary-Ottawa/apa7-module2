@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+	<title>Module 2: Intro to Papers in APA</title>
+</head>
+<body>
+	<script type="text/javascript">
+	
+		/*Get string from URL*/
+		var learner_info = window.location.href.split('?print=')[1];
+		
+		/*Split string into variables*/
+		var learner_name = learner_info.split('&')[0];
+		var cert_date = learner_info.split('&')[1];
+		var cert_score = learner_info.split('&')[2];
+		var cert_a1q1 = learner_info.split('&')[3];
+		var cert_a1q1a = learner_info.split('&')[4];
+		var cert_a1q1b = learner_info.split('&')[5];
+		var cert_a1q1c = learner_info.split('&')[6];
+		var cert_a1q1d = learner_info.split('&')[7];
+		var cert_a2q2 = learner_info.split('&')[8];
+		var cert_a2q2a = learner_info.split('&')[9];
+		var cert_a2q2b  = learner_info.split('&')[10];
+		var cert_a2q2c  = learner_info.split('&')[11];
+		var cert_a2q2d  = learner_info.split('&')[12];
+		var cert_a3q3  = learner_info.split('&')[13];
+		var cert_a3q3a  = learner_info.split('&')[14];
+		var cert_a3q3b = learner_info.split('&')[15];
+		var cert_a3q3c  = learner_info.split('&')[16];
+		var cert_a3q3d  = learner_info.split('&')[17];
+		
+		/*Rounded border*/
+		document.write('<div id="position" style="width:95%;padding:15px;border:2px outset gray;display:block">');
+		
+		/*Content*/
+		document.write('<div class="bigText" style="font-weight: bold"><img src="http://plato.algonquincollege.com/ac-library/OER/module3/logoAC131x35.png" style="width:131px;height:35px;padding-bottom:10px;"alt="Algonquin Logo"></div>');
+		document.write('<div class="smallText">This is to acknowledge that</div>');
+		document.write('<div class="bigText">' + unescape(learner_name) + '</div>');
+		document.write('<div class="smallText">has successfully completed</div>');
+		document.write('<div class="bigText">APA Module 2: Introduction to APA Papers</div>');
+		document.write('<div class="smallText" style="font-weight:bold; margin-bottom:30px;">with a score of '+ unescape(cert_score) +'  out of 3</div>');
+		document.write('<hr>');
+		document.write('<div class="smallText" style="text-align:left; font-weight:bold">Activity - Understanding APA</div>');		
+		document.write('<table class="tableStyle">');
+		document.write('<thead>');
+		document.write('<tr>');
+		document.write('<th style="width:35%">Question</th>');
+		document.write('<th>Correct Answer:</th>');
+		document.write('<th>Student Answer</th>');
+		document.write('<th>Result</th>');
+		document.write('</tr>');
+		document.write('</thead>');
+		document.write('<tr>');
+		document.write('<td>What is the goal of APA style?</td>');
+		document.write('<td>The correct answer is b and c. The goal of APA style is to help prevent plagiarism and to create a consistent format for papers in relevant fields. Coming up with interesting ideas is up to writers!</td>');
+		document.write('<td>' + unescape(cert_a1q1a) +  unescape(cert_a1q1b) + unescape(cert_a1q1c) + unescape(cert_a1q1d) +'</td>');
+		document.write('<td>' + unescape(cert_a1q1) + '</td>');
+		document.write('</tr>');
+		document.write('<tr>');
+		document.write('<td>What elements do you need to pay attention to when submitting an APA formatted paper?</td>');
+		document.write('<td>All of the options are correct. You need to pay attention to all of these elements (the format, the title page, in-text citations, and the reference page) when submitting an APA formatted paper.</td>');
+		document.write('<td>' + unescape(cert_a2q2a) +  unescape(cert_a2q2b) + unescape(cert_a2q2c) + unescape(cert_a2q2d) +'</td>');
+		document.write('<td>' + unescape(cert_a2q2) + '</td>');
+		document.write('</tr>');
+		document.write('<tr>');
+		document.write('<td>What information do you need about books to create an in-text citation and a reference?</td>');
+		document.write('<td>The correct answer is d. When using books, you should write down the author(s), year of publication, title of the book, publisher, and page number(s).</td>');
+		document.write('<td>' + unescape(cert_a3q3a) +  unescape(cert_a3q3b) + unescape(cert_a3q3c) + unescape(cert_a3q3d) +'</td>');
+		document.write('<td>' + unescape(cert_a3q3) + '</td>');
+		document.write('</tr>');
+		document.write('</table>');
+		
+
+		document.write('<div class="smallText">' + unescape(cert_date) + '</div>');
+		document.write('</div>');
+
+		/*Send print request to browser if possible*/
+		window.onload = function() { window.print(); }
+
+	</script>
+
+	<style type="text/css">
+
+		.bigText{
+			overflow:auto;
+			font-size:30px;
+			font-family: arial, sans-serif;
+			margin-top: 10px;
+			text-align: center;
+			
+		}
+		
+		.smallText{
+			overflow:auto;
+			font-size:18px;
+			font-family: arial, Sans-Serif;
+			margin-top: 10px;
+			text-align: center;
+		}
+		
+		.tableStyle {
+			margin-top: 15px;   
+			border-collapse: collapse;
+			width: 100%;
+			font-size:18px;
+			font-family: Serif;
+			text-align: left;
+			border:1px solid #dee2e6;
+		}
+		
+		.tableStyle thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+			padding: 10px;
+			font-weight: bold;
+			
+		}
+		
+		
+		.tableStyle thead td, .tableStyle tr td  {
+    vertical-align: bottom;
+    border-bottom: 1px solid #dee2e6; border-left: 1px solid #dee2e6;
+			padding: 10px;
+		}
+		
+		
+		
+		#position{
+			display: table-cell;
+			vertical-align: middle;
+		}
+
+	</style>
+
+</body>
+
+
+
+</html>
